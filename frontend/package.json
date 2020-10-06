@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "yarn build:styles && react-scripts start",
-    "build": "yarn build:styles && react-scripts build",
+    "build": "NODE_ENV=production yarn build:styles && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:styles": "tailwind build src/assets/styles/tailwind.src.css -o src/assets/styles/tailwind.css"
